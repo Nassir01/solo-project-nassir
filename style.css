@@ -1,0 +1,50 @@
+
+div{
+    
+    text-align: center;
+    padding: 10px;
+    
+}
+#title{
+    background-image:url("https://fr.yamaha.com/fr/files/Image-main_Drums_1200x480_09e201102136398b9957b17c48c7ca9c.jpg") ;
+ color:red;
+ background-repeat: no-repeat, repeat;
+ background-position: center;
+ background-size: cover;
+}
+h1{
+    font-size:120px ;
+    font-style:bolder;
+    font-family: "Brush Script MT", "Brush Script Std", cursive;
+}
+
+h3{
+    font-size:40px ;
+    font-family: "Brush Script MT", "Brush Script Std", cursive;
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+  }
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    font-size:40px ;
+  }
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 3px 5px;
+    text-decoration: none;
+    font-size: 50px;
+  }
+  body{
+      background-color: black;
+
+  }
