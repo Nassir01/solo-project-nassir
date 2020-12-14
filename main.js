@@ -40,6 +40,18 @@ $("#bl").hide()
   
     $("#bl").toggle();
   })
- 
+
+
+
+
+$('#load').on('click', function(){
+    $('input[type="text"]').each(function(){    
+        var id = $(this).attr('id');
+        var value = localStorage.getItem(id);
+        
+        $(this).val(value);
+        
+    }); 
+});
   
   
