@@ -7,10 +7,9 @@
         <title>Drums World</title>
         <link rel="stylesheet" href="style.css">
         <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
-        <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 
         <div id="title">  
-         <button id="button">login</button>     
+         <button id="button" onclick="document.getElementById('input').style.display='block'">login</button>     
         <h1>Drums</h1>
         <h3>if you want to know more about Drums it's the best place for you </h3>
       </div> 
@@ -59,11 +58,30 @@
           <div id="out">
             <div id="input">
               <form class="modal-content animate" action="/action_page.php" method="post">
-              <h4>login: <input type="text" id="meta_title" name="seo_meta_title"></h4> 
-               <h4>password: <input type="text" id="meta_description" name="seo_meta_description"></h4> 
-              <input type="submit" value="Create">
-               
-               <button id="load">load</button>
+                <div class="imgcontainer">
+
+                <span
+                onclick="document.getElementById('input').style.display='none'" class="close" title="Close Modal">&times;</span>
+                
+                </div>
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+            
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+                    
+                  <button type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+                <div class="container" style="background-color:#f1f1f1">
+                  <button type="button" onclick="" class="createbtn">Create</button>
+                  <button type="button" onclick="document.getElementById('input').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+            
+                  
              </div>
 
           </div>

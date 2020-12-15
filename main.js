@@ -2,6 +2,7 @@ $("#b").hide()
 $("#r").hide()
 $("#j").hide()
 $("#bl").hide()
+$('#input').hide()
 
 $("#basic").click(function(){
     $("#r").hide()
@@ -53,5 +54,10 @@ $('#load').on('click', function(){
         
     }); 
 });
-  
+var modal = document.getElementById('input');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
   
