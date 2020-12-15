@@ -178,8 +178,16 @@ input[type=text], input[type=password] {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
+.lesson {font-size: 50px;
 
-
-
+}
+  .lesson:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+.lesson:link {color: pink;
+  background-color: transparent;
+  text-decoration: none;} 
 
 
