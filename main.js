@@ -61,3 +61,19 @@ window.onclick = function(event) {
     }
 }
   
+
+
+function createaccount(){
+  var username=$('#text').val();
+  var password=$('#text2').val();
+  console.log(username)
+  console.log(password)
+  if (typeof(Storage) !== "undefined") {
+  localStorage.setItem(username,password);
+    document.getElementById("result").innerHTML = localStorage.getItem(username);
+  } else {
+    document.getElementById("result").innerHTML = " sorry,try later or true to create an acount";
+  }
+    }
+    
+$("#create").click(createaccount)
