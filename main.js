@@ -9,29 +9,26 @@ $("#basic").click(function(){
     $("#r").hide()
     $("#j").hide()
     $("#bl").hide()
-    $('#input').hide()
-    $("#b").toggle();
-
-
+    // $('#input').hide()
+    $("#b").toggle(); 
 })
 
 
-    $("#rock").click(function(){
-        $("#b").hide()
-$("#j").hide()
-$("#bl").hide()
-$('#input').hide()
-        $("#r").toggle();
-    
-    })
-  
+$("#rock").click(function(){
+    $("#b").hide()
+    $("#j").hide()
+    $("#bl").hide()
+    // $('#input').hide()
+    $("#r").toggle();
+})
+
 
 
   $("#jazz").click(function(){
     $("#b").hide()
     $("#r").hide()
     $("#bl").hide()
-    $('#input').hide()
+    // $('#input').hide()
     $("#j").toggle();
   })
 
@@ -39,11 +36,18 @@ $('#input').hide()
 
 
   $("#blues").click(function(){
-    $("#b").hide()
-    $("#r").hide()
-    $("#j").hide()
-    $('#input').hide()
+    $("#b").hide();
+    $("#r").hide();
+    $("#j").hide();
+    // $('#input').hide();
     $("#bl").toggle();
+  })
+
+  $("#login").click(function(){
+    $("#b").hide();
+    $("#r").hide();
+    $("#j").hide();
+    $('#input').toggle();
   })
 
 
@@ -71,7 +75,7 @@ window.onclick = function(event) {
       alert("Welcome Drummer!!")
       
        $(".lesson").show()
-       $('#input').hide()
+       
       return false 
   }
    else {alert("YOUR PASSWORD IS INCORRECT!!")
@@ -100,3 +104,11 @@ function createaccount(){
     
 $("#create").click(createaccount);
 $("#login").click(loginaccount);
+
+function login() {
+  console.log("loggin in ...")
+  console.log(document.getElementById('input'))
+  document.getElementById('input').style.display = "block";
+  console.log(document.getElementById('input').style.display)
+  console.log(document.getElementById('input'))
+}
